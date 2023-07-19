@@ -1,7 +1,5 @@
 2_Multiplex_configuration
 ================
-Fumio Nakaki
-2023-07-18
 
 ``` r
 library(reshape2)
