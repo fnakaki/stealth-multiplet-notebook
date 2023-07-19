@@ -1,4 +1,4 @@
-1_Singleplex_configuration
+1. Singleplex configuration
 ================
 
 ## A hypothetical singleplex experiment

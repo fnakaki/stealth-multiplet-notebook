@@ -1,4 +1,4 @@
-2_Multiplex_configuration
+2. Multiplex configuration
 ================
 
 ``` r
