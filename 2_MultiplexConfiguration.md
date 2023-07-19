@@ -35,7 +35,8 @@ p_{PS} &=s(e^{-\bar{a}\lambda}-e^{-\lambda})(e^{\frac{\bar{a}\lambda}{s}}-1) \\
 p_{Mu} &=1-e^{-\bar{a}\lambda} \big(s(e^{\frac{\bar a\lambda}{s}} - 1) +1 \big) \\
 p_{Un} &=e^{-\lambda} (e^{(1-\bar{a})\lambda} - (1-\bar{a}){\lambda} -1) \\
 \end{aligned}
-$$
+$$ To examine each proportion, first defining the functions for each
+category of multiplets.
 
 ``` r
 Poisson <- function(k, lambda){
@@ -74,6 +75,8 @@ Un <- function(a, lambda){
   )
 }
 ```
+
+Then, visualising with area charts by fixing two of the parameters.
 
 ``` r
 par(mar=c(3.1,3.1,1.1,1.1), mgp=c(2,0.8,0))
@@ -170,21 +173,14 @@ p <- ggplot(gg, aes(x=lambda, y=value, group=variable, fill=variable)) +
 p
 ```
 
-<div class="figure">
+<img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-1.png" width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-2.png" width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-3.png" width="33%" />
 
-<img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-1.png" alt="Fractions of the four types of mutliplets." width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-2.png" alt="Fractions of the four types of mutliplets." width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-3.png" alt="Fractions of the four types of mutliplets." width="33%" />
-<p class="caption">
-Fractions of the four types of mutliplets.
-</p>
-
-</div>
-
-Under the condition of $a_ir_i=\bar{a}/s$, TSR is expressed as
-
-$$
+Next, exploring *TSR*. under the condition of $a_ir_i=\bar{a}/s$, *TSR*
+is expressed as $$
 TSR =\frac{\bar a{\lambda}e^{-\lambda(1-\bar a)}}{\sum_{i=1}^{s}e^{r_ia_i\lambda}-s}
 =\frac{\bar a{\lambda}e^{-\lambda(1-\bar a)}}{s (e^{\frac{\bar a\lambda}{s}}-1)}
-$$
+$$ *TSR* plotted against labelling efficiency under the different sample
+numbers multiplexed.
 
 ``` r
 TSR_eq <- function(a, lambda, s){
@@ -208,13 +204,11 @@ legend("topleft", inset = 0.02, title=expression(lambda~"= 0.3"), legend=NA, box
 legend("bottomright", inset = 0.02, title="Number of samples", legend=c("1", "2", "5","10","50","1000"), lty = c(1,5,6,2,3,1), ncol=1, box.lty=0, col=c("#F8766D","black","black","black","black","#00BFC4"), cex=1)
 ```
 
-<figure>
-<img
-src="2_MultiplexConfiguration_files/figure-gfm/TSR%20and%20lambda-1.png"
-alt="TSR plotted against labelling efficiency under the different sample numbers multiplexed." />
-<figcaption aria-hidden="true">TSR plotted against labelling efficiency
-under the different sample numbers multiplexed.</figcaption>
-</figure>
+![](2_MultiplexConfiguration_files/figure-gfm/TSR%20and%20lambda-1.png)<!-- -->
+
+The frequencies of homogeneous and partial stealth multiplets among the
+cell-droplets under various conditions. Note that they are the
+frequencies not in the monolabelled but in all cell-droplets.
 
 ``` r
 par(mar=c(3.1,3.1,1.1,1.1), mgp=c(2,0.8,0))
@@ -232,14 +226,12 @@ legend("topright", inset = 0.02, title="Type II multiplet", legend=c(expression(
 legend("topright", inset = c(0.02, 0.25), title="Type I multiplet", legend=c(expression("a = 0.70, "~lambda~" = 0.5"), expression("a = 0.90, "~lambda~" = 0.5"), expression("a = 0.90, "~lambda~" = 0.3"),expression("a = 0.99, "~lambda~" = 0.3")), pch = c(1,0,5,2), ncol=1, box.lty=0, cex=0.7)
 ```
 
-<figure>
-<img
-src="2_MultiplexConfiguration_files/figure-gfm/HS%20and%20PS%20under%20different%20conditions-1.png"
-alt="The frequencies of homogeneous and partial stealth multiplets among the cell-droplets under various conditions." />
-<figcaption aria-hidden="true">The frequencies of homogeneous and
-partial stealth multiplets among the cell-droplets under various
-conditions.</figcaption>
-</figure>
+![](2_MultiplexConfiguration_files/figure-gfm/HS%20and%20PS%20under%20different%20conditions-1.png)<!-- -->
+
+Lastly, we examined a case of multiplexing samples with diffierent
+labelling efficiency, particularly, when one sample was poorly labelled.
+*TSR* is plotted against a labelling efficiency of one sample under
+various sample numbers. The labelling efficiencies of the rest are 0.95.
 
 ``` r
 TSRbscurve <- function(bs, a, lambda, s){
@@ -260,11 +252,4 @@ curve(TSRbscurve(bs, 0.95, 0.3, 50), xname="bs", add=T, lty=3)
 legend("bottomright", inset = 0.02, title = "Number of samples", legend=c("2","5","10","20","50"), lty=c(5,6,2,4,3), seg.len=3, ncol=1, box.lty=0, cex=0.7)
 ```
 
-<figure>
-<img
-src="2_MultiplexConfiguration_files/figure-gfm/Effect%20of%20one%20bad%20sample-1.png"
-alt="The effect o a labelling efficiency of one sample when different numbers of samples are multiplexed." />
-<figcaption aria-hidden="true">The effect o a labelling efficiency of
-one sample when different numbers of samples are
-multiplexed.</figcaption>
-</figure>
+![](2_MultiplexConfiguration_files/figure-gfm/Effect%20of%20one%20bad%20sample-1.png)<!-- -->
