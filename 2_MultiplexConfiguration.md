@@ -12,17 +12,23 @@ library(ggplot2)
 
 When multiple $s$ samples are individually labelled and pooled, the
 probability of the four categories of the multiplets can be expressed as
-follows:\\ $$
+follows:
+
+$$
 \begin{aligned}
 p_{HS} &=e^{-\lambda}\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}-\bar{a}{\lambda}-s\Big) \\
 p_{PS} &=(e^{-\bar{a}\lambda}- e^{-\lambda})\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}-s\Big)\\
 p_{Mu} &=1-e^{-\bar{a}\lambda}\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}  - s + 1 \Big)\\
 p_{Un} &=e^{-\lambda} (e^{(1-\bar{a})\lambda} - (1-\bar{a}){\lambda} -1) \\
 \end{aligned}
-$$ For simplicity, we assume that the all samples are labelled with the
+$$
+
+For simplicity, we assume that the all samples are labelled with the
 equal labelling efficiency and pooled with the equal proportion. In this
 case, $a_ir_i=\bar{a}/s$, and the probability of the four cateories
-above are\\ $$
+above are
+
+$$
 \begin{aligned}
 p_{HS} &=se^{-\lambda}(e^{\frac{\bar{a}\lambda}{s}}-1)-\bar{a}{\lambda}e^{-\lambda}\\
 p_{PS} &=s(e^{-\bar{a}\lambda}-e^{-\lambda})(e^{\frac{\bar{a}\lambda}{s}}-1) \\
@@ -173,7 +179,9 @@ Fraction of the four types of mutliplets.
 
 </div>
 
-Under the condition of $a_ir_i=\bar{a}/s$, TSR is expressed as\\ $$
+Under the condition of $a_ir_i=\bar{a}/s$, TSR is expressed as
+
+$$
 TSR =\frac{\bar a{\lambda}e^{-\lambda(1-\bar a)}}{\sum_{i=1}^{s}e^{r_ia_i\lambda}-s}
 =\frac{\bar a{\lambda}e^{-\lambda(1-\bar a)}}{s (e^{\frac{\bar a\lambda}{s}}-1)}
 $$
