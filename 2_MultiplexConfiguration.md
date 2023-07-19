@@ -35,7 +35,9 @@ p_{PS} &=s(e^{-\bar{a}\lambda}-e^{-\lambda})(e^{\frac{\bar{a}\lambda}{s}}-1) \\
 p_{Mu} &=1-e^{-\bar{a}\lambda} \big(s(e^{\frac{\bar a\lambda}{s}} - 1) +1 \big) \\
 p_{Un} &=e^{-\lambda} (e^{(1-\bar{a})\lambda} - (1-\bar{a}){\lambda} -1) \\
 \end{aligned}
-$$ To examine each proportion, first defining the functions for each
+$$
+
+To examine each proportion, first defining the functions for each
 category of multiplets.
 
 ``` r
@@ -176,10 +178,14 @@ p
 <img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-1.png" width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-2.png" width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-3.png" width="33%" />
 
 Next, exploring *TSR*. under the condition of $a_ir_i=\bar{a}/s$, *TSR*
-is expressed as $$
+is expressed as
+
+$$
 TSR =\frac{\bar a{\lambda}e^{-\lambda(1-\bar a)}}{\sum_{i=1}^{s}e^{r_ia_i\lambda}-s}
 =\frac{\bar a{\lambda}e^{-\lambda(1-\bar a)}}{s (e^{\frac{\bar a\lambda}{s}}-1)}
-$$ *TSR* plotted against labelling efficiency under the different sample
+$$
+
+*TSR* plotted against labelling efficiency under the different sample
 numbers multiplexed.
 
 ``` r
