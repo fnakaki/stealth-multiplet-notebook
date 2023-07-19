@@ -172,9 +172,9 @@ p
 
 <div class="figure">
 
-<img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-1.png" alt="Fraction of the four types of mutliplets." width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-2.png" alt="Fraction of the four types of mutliplets." width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-3.png" alt="Fraction of the four types of mutliplets." width="33%" />
+<img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-1.png" alt="Fractions of the four types of mutliplets." width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-2.png" alt="Fractions of the four types of mutliplets." width="33%" /><img src="2_MultiplexConfiguration_files/figure-gfm/Stealth Multiplet fraction-3.png" alt="Fractions of the four types of mutliplets." width="33%" />
 <p class="caption">
-Fraction of the four types of mutliplets.
+Fractions of the four types of mutliplets.
 </p>
 
 </div>
@@ -211,9 +211,9 @@ legend("bottomright", inset = 0.02, title="Number of samples", legend=c("1", "2"
 <figure>
 <img
 src="2_MultiplexConfiguration_files/figure-gfm/TSR%20and%20lambda-1.png"
-alt="TSR and lambda under the different sample numbers multiplexed." />
-<figcaption aria-hidden="true">TSR and lambda under the different sample
-numbers multiplexed.</figcaption>
+alt="TSR plotted against labelling efficiency under the different sample numbers multiplexed." />
+<figcaption aria-hidden="true">TSR plotted against labelling efficiency
+under the different sample numbers multiplexed.</figcaption>
 </figure>
 
 ``` r
@@ -235,9 +235,9 @@ legend("topright", inset = c(0.02, 0.25), title="Type I multiplet", legend=c(exp
 <figure>
 <img
 src="2_MultiplexConfiguration_files/figure-gfm/HS%20and%20PS%20under%20different%20conditions-1.png"
-alt="The frequency of homogeneous and partial stealth multiplets among the cell-droplets under the different conditions." />
-<figcaption aria-hidden="true">The frequency of homogeneous and partial
-stealth multiplets among the cell-droplets under the different
+alt="The frequencies of homogeneous and partial stealth multiplets among the cell-droplets under various conditions." />
+<figcaption aria-hidden="true">The frequencies of homogeneous and
+partial stealth multiplets among the cell-droplets under various
 conditions.</figcaption>
 </figure>
 
@@ -263,7 +263,8 @@ legend("bottomright", inset = 0.02, title = "Number of samples", legend=c("2","5
 <figure>
 <img
 src="2_MultiplexConfiguration_files/figure-gfm/Effect%20of%20one%20bad%20sample-1.png"
-alt="The effect of labelling efficiency of one sample when different numbers of samples are multiplexed." />
-<figcaption aria-hidden="true">The effect of labelling efficiency of one
-sample when different numbers of samples are multiplexed.</figcaption>
+alt="The effect o a labelling efficiency of one sample when different numbers of samples are multiplexed." />
+<figcaption aria-hidden="true">The effect o a labelling efficiency of
+one sample when different numbers of samples are
+multiplexed.</figcaption>
 </figure>
