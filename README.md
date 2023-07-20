@@ -7,8 +7,5 @@ Corresponding to Figure 1 of the paper.
 ## 2_Multiplex_configuration
 Corresponding to Figure 2 of the paper.
 
-## 3_Demultiplexing_barcodes
-Corresponding to Figure 3 and 5 and Table 1 and 2 of the paper.
-
 ## /bc_matrix
 Storing barcode read matrices (rds files) used in the study.
