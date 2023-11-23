@@ -1,4 +1,4 @@
-# A probaility of the stealth multiplet in mx-scRNA-seq
+# Probaility of stealth multiplets in mx-scRNA-seq
 The supplementary R notebooks attached to the paper on a probability of the stealth multiplet in the sample-multiplexing droplet-based single-cell RNA sequencing (mx-scRNA-seq), containing three notebooks.
 
 ## 1_SingleplexConfiguration
