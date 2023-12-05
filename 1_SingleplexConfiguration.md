@@ -3,14 +3,14 @@
 
 ## A hypothetical singleplex experiment
 
-In the imaginary singleplex configuration, the probability of the
-homogeneous stealth multiplet $p_{HS}$ and the partial stealth multiplet
-$p_{PS}$ can be expressed as follows:
+In the conceptual singleplex configuration, the probability of the
+homogeneous stealth multiplet $p_{\textrm{HS}}$ and the partial stealth multiplet
+$p_{\textrm{PS}}$ can be expressed as follows:
 
 $$
 \begin{aligned}
-p_{HS} &= e^{-\lambda}(e^{a\lambda} - a{\lambda}-1) \\
-p_{PS} &= 1-e^{-\lambda}(e^{a\lambda}+e^{(1-a)\lambda}-1)  \\
+p_{\textrm{HS}} &= e^{-\lambda}(e^{a\lambda} - a{\lambda}-1) \\
+p_{\textrm{PS}} &= 1-e^{-\lambda}(e^{a\lambda}+e^{(1-a)\lambda}-1)  \\
 \end{aligned}
 $$
 
