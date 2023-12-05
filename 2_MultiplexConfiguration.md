@@ -14,10 +14,10 @@ follows:
 
 $$
 \begin{aligned}
-p_{HS} &=e^{-\lambda}\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}-\bar{a}{\lambda}-s\Big) \\
-p_{PS} &=(e^{-\bar{a}\lambda}- e^{-\lambda})\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}-s\Big)\\
-p_{Mu} &=1-e^{-\bar{a}\lambda}\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}  - s + 1 \Big)\\
-p_{Un} &=e^{-\lambda} (e^{(1-\bar{a})\lambda} - (1-\bar{a}){\lambda} -1) \\
+p_{\textrm{HS}} &=e^{-\lambda}\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}-\bar{a}{\lambda}-s\Big) \\
+p_{\textrm{PS}} &=(e^{-\bar{a}\lambda}- e^{-\lambda})\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}-s\Big)\\
+p_{\textrm{Mu}} &=1-e^{-\bar{a}\lambda}\Big(\sum_{i=1}^{s}e^{r_ia_i\lambda}  - s + 1 \Big)\\
+p_{\textrm{Un}} &=e^{-\lambda} (e^{(1-\bar{a})\lambda} - (1-\bar{a}){\lambda} -1) \\
 \end{aligned}
 $$
 
@@ -28,10 +28,10 @@ above are
 
 $$
 \begin{aligned}
-p_{HS} &=se^{-\lambda}(e^{\frac{\bar{a}\lambda}{s}}-1)-\bar{a}{\lambda}e^{-\lambda}\\
-p_{PS} &=s(e^{-\bar{a}\lambda}-e^{-\lambda})(e^{\frac{\bar{a}\lambda}{s}}-1) \\
-p_{Mu} &=1-e^{-\bar{a}\lambda} \big(s(e^{\frac{\bar a\lambda}{s}} - 1) +1 \big) \\
-p_{Un} &=e^{-\lambda} (e^{(1-\bar{a})\lambda} - (1-\bar{a}){\lambda} -1) \\
+p_{\textrm{HS}} &=se^{-\lambda}(e^{\frac{\bar{a}\lambda}{s}}-1)-\bar{a}{\lambda}e^{-\lambda}\\
+p_{\textrm{PS}} &=s(e^{-\bar{a}\lambda}-e^{-\lambda})(e^{\frac{\bar{a}\lambda}{s}}-1) \\
+p_{\textrm{Mu}} &=1-e^{-\bar{a}\lambda} \big(s(e^{\frac{\bar a\lambda}{s}} - 1) +1 \big) \\
+p_{\textrm{Un}} &=e^{-\lambda} (e^{(1-\bar{a})\lambda} - (1-\bar{a}){\lambda} -1) \\
 \end{aligned}
 $$
 
